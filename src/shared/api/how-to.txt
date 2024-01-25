@@ -1,0 +1,19 @@
+[Информация от Владислава]
+Выполняем команды:
+$ npm i openapi-typescript-codegen
+$ npxopenapi --input=spec.yml --output=api --client=fetch
+
+
+--input – туда пишем файл спецификацииOpenAPI. Это может быть файл формата JSON или YAML,
+--output – туда пишем директорию в которую будут генерироваться TSинтерфейсы и типы
+Если возникает ошибка попробуйте обновить JDK, мне помогло
+
+[Дополнение от Виктора]
+Чтобы отформатировать сгенерированный код (и чтобы не было такого, что в ПР потом ВСЕ файлы изменены), можно выполнить следующую команду:
+npx prettier --write src/shared/api/**/*.ts
+
+[Дополнение от Артура]
+После выполнения команд - необходимо перейти в src/shared/api/services/Service.ts
+
+И заменить import { request as __request } from '../core/request';
+на import { RequestDecorator as __request } from '@entities/session/requestDecorator';

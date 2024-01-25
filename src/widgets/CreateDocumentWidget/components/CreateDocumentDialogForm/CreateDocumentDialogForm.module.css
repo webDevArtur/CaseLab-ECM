@@ -1,0 +1,31 @@
+.paper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 720px;
+}
+
+.inputGroup {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.documentNameInput {
+  display: flex;
+  height: 56px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 38%;
+}
+
+.documentTypeSelect {
+  display: flex;
+  padding: var(--none, 0px) 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--none, 0px);
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+            "@api": [
+                "shared/api"
+            ],
+            "@api/*": [
+                "shared/api/*"
+            ],
+            "@app/*": [
+                "app/*"
+            ],
+            "@features/*": [
+                "features/*"
+            ],
+            "@shared/*": [
+                "shared/*"
+            ],
+            "@entities/*": [
+                "entities/*"
+            ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@store/*": [
+                "store/*"
+            ],
+            "@widgets/*": [
+                "widgets/*"
+            ],
+            "@processes/*": [
+                "processes/*"
+            ]
+        }
+    }
+}
